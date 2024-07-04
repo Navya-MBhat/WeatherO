@@ -15,7 +15,7 @@ import forecast_icon from "../Assets/icons8-weather-forecast-96.png";
 
 export const WeatherApp = () => {
 
-  let api_key = "4ac7f0621c4e65e12babae70f9184c7d";
+  const api_key = process.env.REACT_APP_API_KEY;
   const [wicon,setWicon] = useState(cloud_icon);
   const search= async() => {
     const element = document.getElementsByClassName("cityInput")
